@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Inline & Block Styling</title>
-  <style>
-   
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Inline & Block Styling</title>
+	<style>
+		li {
+			display: inline;
+		}
+
+		li a {
+			padding-right: 20px;
+		}
+
+		img {
+			/* to center image have to be in disply block*/
+			display: block;
+			margin: auto;
+		}
+
+		.box {
+			width: 32%;
+			display: inline-block;
+			background: #f4f4f4;
+			padding: 20px;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+		}
+	</style>
 </head>
+
 <body>
-  
+	<ul>
+		<li><a href="#">Technology</a></li>
+		<li><a href="#">Business</a></li>
+		<li><a href="#">Fashion</a></li>
+	</ul>
+	<br><br>
+	<img src="./img/leaf.png" alt="My Image">
+	<br><br>
+	<div class="box">
+		<h3>Heading</h3>
+		<p>
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum facilis non officia facere, error dolorem aliquam,
+			ipsa minima saepe, tempore deserunt omnis! Impedit pariatur blanditiis illo sapiente consequatur nulla natus
+			nostrum. Nesciunt deleniti inventore asperiores suscipit ut optio vel harum?
+		</p>
+	</div>
+	<div class="box">
+		<h3>Heading</h3>
+		<p>
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum facilis non officia facere, error dolorem aliquam,
+			ipsa minima saepe, tempore deserunt omnis! Impedit pariatur blanditiis illo sapiente consequatur nulla natus
+			nostrum. Nesciunt deleniti inventore asperiores suscipit ut optio vel harum?
+		</p>
+	</div>
+	<div class="box">
+		<h3>Heading</h3>
+		<p>
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum facilis non officia facere, error dolorem aliquam,
+			ipsa minima saepe, tempore deserunt omnis! Impedit pariatur blanditiis illo sapiente consequatur nulla natus
+			nostrum. Nesciunt deleniti inventore asperiores suscipit ut optio vel harum?
+		</p>
+	</div>
 </body>
+
 </html>
