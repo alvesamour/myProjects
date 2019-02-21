@@ -1,2 +1,2 @@
 # myProjects
-Here trainings after WF3
+After my certifications I started to improve my experiences.
