@@ -1,0 +1,183 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* corps */
+#container {
+  max-width: 1050px;
+  min-width: 800px;
+  margin: 1rem auto;
+}
+/* logo et search box */
+#tete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 a {
+  font-size: 40px;
+  font-weight: 100;
+  color: #861bbf;
+  text-decoration: none;
+}
+#search {
+  padding: 4%;
+  background: linear-gradient(#e4f2b9, #b7e953);
+  width: 30%;
+}
+/* search form */
+#search form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search form .topic {
+  padding: 0.3rem;
+  width: 60%;
+  color: #e36a0c;
+  border: 1px solid #c8d03e;
+  font-size: 15px;
+}
+
+#search form .submit {
+  background: #a751d6;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #dcd5e1;
+}
+/* navigation */
+#navegar {
+  height: 20%;
+  background: linear-gradient(#fcfcfa, #d5d533);
+  padding: 7px 0;
+  margin-top: 1rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#navegar ul li {
+  padding: 0 30px;
+  border-right: 1px solid #5d12e7;
+}
+
+#navegar ul li:last-child {
+  border-right: none;
+}
+
+#navegar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #5d12e7;
+  line-height: 30px;
+  transition: font-size 0.3s ease;
+}
+
+#navegar ul li a:hover {
+  font-size: 20px;
+  font-weight: bold;
+  color: #b314db;
+}
+/* section - introduction */
+#introduction {
+  background: linear-gradient(#f3f5ee, #b7e952);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px 0;
+}
+/* title h3 - do you need help */
+#introduction h3 {
+  font-size: 45px;
+  color: #316901;
+  font-weight: normal;
+}
+/* paragraph - Our website */
+#introduction p {
+  font-size: 25px;
+  color: #628f19;
+  text-align: justify;
+}
+/* section - description*/
+#goto h3,
+#whyus h3 {
+  color: #b314db;
+  font-size: 30px;
+}
+#description {
+  display: flex;
+  justify-content: space-between;
+}
+/* aside - goto */
+#description #goto {
+  border: 1px solid #baf46f;
+  box-shadow: 5px 5px #62d194;
+  width: 44%;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+#goto ul {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#goto ul li {
+  padding: 0.3rem;
+}
+/* transition - aside - goto */
+#goto ul li a {
+  text-decoration: none;
+  color: #5d12e7;
+  font-size: 22px;
+  transition: font-size 0.3 ease;
+}
+/* transition - aside - goto a:hover */
+#goto ul li a:hover,
+#goto ul li a:active {
+  text-decoration: none;
+  color: #b314db;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* article - whyus */
+#description #whyus {
+  border: 1px solid #baf46f;
+  box-shadow: 5px 5px #62d194;
+  width: 44%;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+#whyus ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#whyus ul li {
+  padding: 20px 0 20px 80px;
+  text-decoration: none;
+  color: #5d12e7;
+  font-size: 22px;
+  background: url(/img/yes.png) no-repeat left;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1050px;
+  min-width: 800px;
+  margin: 1rem auto;
+  height: 60px;
+  background: linear-gradient(#fcfcfa, #d5d533);
+  padding: 10px 30px;
+  color: #861bbf;
+  font-size: 18px;
+}
