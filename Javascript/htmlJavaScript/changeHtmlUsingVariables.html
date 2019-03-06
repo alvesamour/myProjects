@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change HTML Content using variables</title>
+    <style>
+        .bluebox {
+            background-color: #3a5795;
+            height: 100px;
+            color: white;
+            width: auto;
+        }
+
+        .yellowbox {
+            background-color: rgb(222, 225, 84);
+            height: 100px;
+            width: auto;
+        }
+
+        .greenbox {
+            background-color: #31af37;
+            height: 100px;
+            width: auto;
+        }
+
+        .great {
+            background-color: #5a3479;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bluebox" id="facebook">
+        <p>Facebook is <span>Not Fun</span>.</p>
+    </div>
+    <div class="yellowbox" id="apple">
+        <p>Apple.</p>
+    </div>
+    <div class="greenbox">
+        <p>Microsoft.</p>
+    </div>
+    <button id="button1">Change Facebook style</button>
+    <button id="button2">Change APPLE style</button>
+    <script>
+        //change backgroundColor facebook
+        let color = 'rgb(19, 150, 69)';
+        document.getElementById('button1').onclick = function () {
+            document.getElementById('facebook').style.backgroundColor = color;
+        }
+        //random number 0 to 256
+        var x, y, z, appleColor;
+        document.getElementById('button2').onclick = function () {
+            x = Math.round(Math.random() * 256);
+            y = Math.round(Math.random() * 256);
+            z = Math.round(Math.random() * 256);
+            appleColor = `rgb(${x}, ${y}, ${z})`;
+            document.getElementById('apple').style.backgroundColor = appleColor;
+            document.getElementById('apple').innerHTML = appleColor;
+
+        }
+    </script>
+</body>
+
+</html>

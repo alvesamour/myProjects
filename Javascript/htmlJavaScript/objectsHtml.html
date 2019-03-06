@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects</title>
+</head>
+
+<body>
+    <p>Javascript</p>
+    <script>
+        let smartPhone = {
+            name: 'Samsung',
+            model: 'S8',
+            warranty: '2',
+            color: 'black'
+        }
+
+        ;
+        console.log(smartPhone);
+        //delete property
+        delete smartPhone.warranty;
+        console.log(smartPhone);
+        //See one property
+        console.log(smartPhone.model)
+        let otherSmartPhone = smartPhone;
+        console.log(otherSmartPhone);
+        otherSmartPhone.model = 'Iphone X';
+        console.log(otherSmartPhone);
+        //we have the same property now
+        console.log(smartPhone);
+    </script>
+</body>
+
+</html>

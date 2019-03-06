@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions</title>
+    <style>
+        .bluebox {
+            background-color: #3a5795;
+            height: 100px;
+            color: white;
+            width: auto;
+        }
+
+        .yellowbox {
+            background-color: rgb(222, 225, 84);
+            height: 100px;
+            width: auto;
+        }
+
+        .greenbox {
+            background-color: #31af37;
+            height: 100px;
+            width: auto;
+        }
+
+        .great {
+            background-color: #5a3479;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bluebox" id="facebook">
+        <p>Facebook is <span>Not Fun</span>.</p>
+    </div>
+    <div class="yellowbox" id="apple">
+        <p>Apple.</p>
+    </div>
+    <div class="greenbox" id="micro">
+        <p>Microsoft.</p>
+    </div>
+    <button id="button1" onclick="swap('facebook', 'apple')">Swap face to apple</button>
+    <button id="button2" onclick="swap('apple', 'micro')">Swap face to micro</button>
+    <script>
+        function hello() {
+            alert('Hello world!');
+        }
+        //hello();
+
+        function coucou(firstname) {
+            alert(`Coucou ${firstname}!`);
+        }
+        //coucou('Victor');
+
+        function sum(a, b) {
+            return `La somme est: ${a+b}`;
+        }
+        let x = sum(3, 5);
+        //alert(x);
+
+        function swap(id1, id2) {
+            let y = document.getElementById(id1).innerHTML;
+            let z = document.getElementById(id2).innerHTML;
+            document.getElementById(id2).innerHTML = y;
+            document.getElementById(id1).innerHTML = z;
+        }
+    </script>
+</body>
+
+</html>

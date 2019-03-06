@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects using Constructor</title>
+</head>
+
+<body>
+    <p>Javascript</p>
+    <script>
+        function person(name, age, nacionality, work) {
+            //the current object
+            //property ---- value
+            this.name = name;
+            this.age = age;
+            this.nacionality = nacionality;
+            this.work = work;
+            this.addAge = function (one) {
+                //Add one
+                this.age += one;
+            }
+        }
+        let myPerson = new person('Romilson', 33, 'Cape Verte', 'IT');
+        console.log(myPerson);
+        myPerson.addAge(1);
+        console.log(myPerson.age);
+
+        //Other Person
+        let otherPerson = new person('Victor', 4, 'Luxembourg', 'Student');
+        console.log(otherPerson);
+    </script>
+</body>
+
+</html>
