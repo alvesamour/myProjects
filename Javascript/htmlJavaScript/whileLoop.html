@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>While Loop</title>
+</head>
+
+<body>
+    <p id="tantQue">JavaScript</p>
+    <p id="argent">Argent: </p>
+    <button onclick="acheterItem()">Acheter</button>
+    <script>
+        let i = 0;
+        while (i < 5) {
+            document.getElementById('tantQue').innerHTML += '<br/>' + i;
+            i++;
+        }
+
+        function acheterItem() {
+            let argent = 1000;
+            let itemAchete = 0;
+            while (argent > 0) {
+                let itemPrix = Math.floor(Math.random() * 100);
+                if (itemPrix <= argent) {
+                    itemAchete += 1;
+                    argent -= itemPrix;
+                    document.getElementById('argent').innerHTML +=
+                        `<p>Achat de: ${itemPrix} Argent restant: ${argent}</p>`;
+                }
+            }
+            document.getElementById('argent').innerHTML += `<p> Tu as Achete: ${itemAchete} choses.`
+        }
+    </script>
+</body>
+
+</html>

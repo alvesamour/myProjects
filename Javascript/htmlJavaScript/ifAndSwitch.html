@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>If and Switch</title>
+</head>
+
+<body>
+    <p>Vitesse du jeune conducteur:
+        <input id="vitesse" type="number">
+        <button onclick="analiserVitesse()">Analiser</button>
+    </p>
+    <p>Le temps aujourd'hui:
+        <input id="temps" type="text">
+        <button onclick="analiserTemps()">Analiser</button>
+    </p>
+    <script>
+        function analiserVitesse() {
+            let vitesse = document.getElementById('vitesse').value;
+            if (vitesse > 70) {
+                alert('Il faut relentir!');
+            } else if (vitesse < 30) {
+                alert('Trop lent!');
+            } else {
+                alert('Continue comme ça!');
+            }
+        }
+
+        function analiserTemps() {
+            let t = document.getElementById('temps').value.toLowerCase();
+            switch (t) {
+                case 'ete':
+                    alert('Il y a du beau soleil');
+                    break;
+                case 'hiver':
+                    alert('Il y a de la neige');
+                    break;
+                case 'printemps':
+                    alert('Il y a beaucoup de fleurs');
+                    break;
+                case 'automne':
+                    alert('Il y a de la pluie');
+                    break;
+                default:
+                    alert('Je ne connais pas ça!!!');
+
+            }
+        }
+    </script>
+</body>
+
+</html>

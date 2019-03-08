@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Validate</title>
+    <style>
+        #erro {
+            color: rgb(196, 30, 30);
+        }
+    </style>
+</head>
+
+<body>
+    <p>Your password should contain at least 6 characters, 1 number and 1 capital letter: </p>
+    <p>
+        Enter Password: <br />
+        <input id="password" type="password">
+    </p>
+    <p>
+        Re-enter Password: <br />
+        <input id="password2" type="password">
+    </p>
+    <button onclick="validatePass()">Submit</button>
+    <p id="erro"></p>
+    <script>
+        function validatePass() {
+            let password = document.getElementById('password').value;
+            let password2 = document.getElementById('password2').value;
+            let errorMessage = document.getElementById('erro');
+            let errorToThrow = '';
+            try {
+                if (password.length < 6) {
+                    errorToThrow += '<br/> Password to short.';
+                }
+                if (/[A-Z]/g.test(password) == false) {
+                    errorToThrow += '<br/> Password should include a capital letter.';
+                }
+                if (/\d/g.test(password) == false) {
+                    errorToThrow += '<br/> Password should include at least one digit.';
+                }
+                if (password != password2) {
+                    errorToThrow += '<br/> Password should match.';
+                }
+                throw errorToThrow;
+            } catch (err) {
+                errorMessage.innerHTML = err;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loop For</title>
+</head>
+
+<body>
+    <p id="pour">Javascript</p>
+    <script>
+        for (let i = 0; i < 5; i++) {
+            document.getElementById('pour').innerHTML += '<br/>' + i;
+        }
+        //49 to 1
+        for (let i = 7; i > 0; i--) {
+            document.getElementById('pour').innerHTML += '<br/>' + Math.pow(i, 2);
+        }
+        //Afficher liste achat
+        let compras = ['leite', 'pao', 'vinho', 'agua'];
+        for (i = 0; i < compras.length; i++) {
+            document.getElementById('pour').innerHTML += '<br/>' + compras[i];
+        }
+        //Adicioner 10 dans les elements du tableau
+        let numberListe = [1, 2, 3, 4, 5];
+        for (i = 0; i < numberListe.length; i++) {
+            numberListe[i] += 10;
+        }
+        document.getElementById('pour').innerHTML += '<br/>' + numberListe;
+    </script>
+</body>
+
+</html>

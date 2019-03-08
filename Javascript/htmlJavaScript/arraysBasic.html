@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <p id="id1">Javascript</p>
+    <script>
+        //declare Array
+        let compras = ['pain', 'vin', 'jus'];
+        //with a function
+        function showCompras(x) {
+            document.getElementById('id1').innerHTML += '</br>' + x;
+        }
+        //voir les elements
+        showCompras(`La liste complete: ${compras}`);
+        showCompras(`Le premier element: ${compras[0]}`);
+        showCompras(`Le dernier element: ${compras[2]}`);
+        //changer un element
+        compras[1] = 'Lait';
+        showCompras(`La liste complete: ${compras}`);
+        //Supprimer Element
+        delete compras[1];
+        showCompras(`La liste complete: ${compras}`);
+        //Adicionner autre
+        compras[1] = 'Pizza';
+        showCompras(`La liste complete: ${compras}`);
+        //Delete complete du 2 element
+        compras.splice(1, 1);
+        showCompras(`La liste complete: ${compras}`);
+        //Add values apres le dernier element
+        compras.splice(1, 0, 'banana', 'orange');
+        showCompras(`La liste complete: ${compras}`);
+        //Organiser ordre alphabet
+        compras.sort();
+        showCompras(`La liste par ordre alphabet complete: ${compras}`);
+        //Si on renverse l'ordre
+        compras.reverse();
+        showCompras(`La liste renverse par ordre alphabet complete: ${compras}`);
+
+        //Other exemple
+        //Add space in the string
+        let myString = 'ABCD';
+        let myArray = myString.split('');
+        showCompras(myArray);
+        //delete space in the string
+        let myStringg = 'How are You?';
+        let myArrayy = myStringg.split(' ', 2);
+        showCompras(myArrayy);
+    </script>
+</body>
+
+</html>

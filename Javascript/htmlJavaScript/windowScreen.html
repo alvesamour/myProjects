@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Window Screen</title>
+    <style>
+        #div1 {
+            background-color: rgb(134, 14, 14);
+        }
+
+        #div2 {
+            background-color: rgb(7, 94, 14);
+        }
+
+        #div3 {
+            background-color: rgb(152, 180, 25);
+        }
+
+        #div4 {
+            background-color: rgb(36, 14, 134);
+        }
+
+        .box {
+            float: left;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1" class="box">Div1</div>
+    <div id="div2" class="box">Div2</div>
+    <div id="div3" class="box">Div3</div>
+    <div id="div4" class="box">Div4</div>
+    <script>
+        let windowHeight = innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        //alert(windowHeight);
+
+        let screenWidth = screen.width;
+        //alert(screenWidth);
+
+        let availableScreenHeight = screen.availHeight;
+        //alert(availableScreenHeight);
+
+        for (i = 1; i < 5; i++) {
+            document.getElementById('div' + i).style.width = innerWidth / 4 - 10 + 'px';
+            document.getElementById('div' + i).style.height = innerHeight - 10 + 'px';
+        }
+    </script>
+</body>
+
+</html>
