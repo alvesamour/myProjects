@@ -1,0 +1,202 @@
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo {
+        display: none;
+    }
+
+    .bApp img {
+        width: 40%;
+    }
+
+    /*button Apple*/
+    .apple {
+        margin-bottom: 1rem;
+    }
+
+    /*button google*/
+    .google {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    /*styler le button*/
+    .lead .btn {
+        width: 40%;
+    }
+
+    /*style quand on passe la sourit*/
+    .lead .btn:hover {
+        border-radius: 1rem;
+        margin-right: 2rem;
+        box-shadow: 3px 3px 3px rgb(70, 75, 74);
+        background: rgb(64, 150, 24);
+        border-color: rgb(15, 97, 56);
+        ;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .tete {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    /*styler le button*/
+    .lead .btn {
+        width: 40%;
+    }
+
+    .apple img,
+    .google img {
+        width: 70%;
+    }
+
+    .bApp {
+        margin-bottom: 3rem;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .tete {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    /*styler le button*/
+    .lead .btn {
+        width: 40%;
+    }
+
+    .apple img,
+    .google img {
+        width: 70%;
+    }
+
+    .bApp {
+        margin-bottom: 3rem;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .tete {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    /*styler le button*/
+    .lead .btn {
+        width: 40%;
+    }
+
+    .apple img,
+    .google img {
+        width: 70%;
+    }
+
+    .bApp {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .logo {
+        display: none;
+    }
+
+    .tete {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    /*styler le button*/
+    .lead .btn {
+        width: 30%;
+    }
+
+    .apple img,
+    .google img {
+        width: 60%;
+    }
+
+    .bApp {
+        margin-bottom: 1rem;
+    }
+}
+
+/*GENERAL*/
+/*enlever les padding droit et gauche*/
+#corps {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*police et taille du title*/
+.title {
+    font-family: 'Righteous', cursive;
+}
+
+/*image du jumbotron centré*/
+.jumbotron {
+    background: url('/img/cv.jpg') center center no-repeat;
+}
+
+/*centrer e couleur police*/
+.title,
+.lead {
+    text-align: center;
+    color: white;
+}
+
+/*police et taille du paragraphe*/
+.lead {
+    font-family: 'Signika', sans-serif;
+    font-size: 1.2rem;
+}
+
+/*styler le button*/
+.lead .btn {
+    border-radius: 1rem;
+    margin-right: 2rem;
+    box-shadow: 3px 3px 3px rgb(70, 75, 74);
+}
+
+/*style quand on passe la sourit*/
+.lead .btn:hover {
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px rgb(70, 75, 74);
+    background: rgb(64, 150, 24);
+    border-color: rgb(15, 97, 56);
+    ;
+}
+
+/*paragraphe essayer*/
+.try p {
+    font-family: 'Signika', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    font-family: 'Signika', sans-serif;
+    background: #ddd;
+}

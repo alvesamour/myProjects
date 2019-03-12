@@ -21,7 +21,7 @@ document.getElementById('startReset').onclick = function () {
         //gacher gameOver box
         cacher('gameOver');
         //change button to reset
-        document.getElementById('startReset').innerHTML = 'Reset Game';
+        document.getElementById('startReset').innerHTML = 'Recommencer';
         //start count
         startCount();
         //generer question reponses
@@ -70,12 +70,12 @@ function startCount() {
         if (timemoins == 0) {
             stopCount();
             montrer('gameOver');
-            document.getElementById('gameOver').innerHTML = `<p>Game Over!</p><p>Tu as eu ${score} reponses.</p>`;
+            document.getElementById('gameOver').innerHTML = `<p>C\'est fini!</p><p>Tu as eu ${score} bonnes reponses.</p>`;
             cacher('time');
             cacher('correct');
             cacher('try');
             play = false;
-            document.getElementById('startReset').innerHTML = 'Start Game';
+            document.getElementById('startReset').innerHTML = 'Commencer';
         }
     }, 1000);
 }
