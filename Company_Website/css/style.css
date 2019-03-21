@@ -1,0 +1,90 @@
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo img {
+        width: 50px;
+    }
+
+    /* card image style */
+    .card img {
+        width: 30%;
+        margin: 10px auto;
+    }
+
+}
+
+/* tablet*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logo img {
+        width: 60px;
+    }
+
+    /* card image style */
+    .card img {
+        width: 60%;
+        margin: 10px auto;
+    }
+}
+
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .logo img {
+        width: 50px;
+    }
+
+    /* card image style */
+    .card img {
+        width: 50%;
+        margin: 10px auto;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .logo img {
+        width: 30px;
+    }
+
+    /* card image style */
+    .card img {
+        width: 30%;
+        margin: 10px auto;
+    }
+}
+
+/* font du site */
+body {
+    font-family: 'Indie Flower',
+        cursive;
+}
+
+/* aligner le title*/
+.titulo h1 {
+    color: rgb(252, 252, 253);
+    margin: 20px auto;
+}
+
+/* card style */
+.card {
+    margin-bottom: 2rem;
+    border: none;
+    background-color: rgba(252, 252, 253, 0.4);
+}
+
+.card-title {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#corpo {
+    background-color: rgba(99, 182, 250, 0.76);
+}
+
+.botao {
+    padding-bottom: 2rem;
+}
